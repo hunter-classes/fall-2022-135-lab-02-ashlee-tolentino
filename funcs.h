@@ -1,9 +1,14 @@
-//.H FILES ARE FOR FILES THAT ARE NOT MAIN.CPP FILES; INCLUDE .H FILES INSIDE THESE OTHER FILES
+/*
+Author: Ashlee Tolentino
+Course: CSCI-135
+Instructor: Michael Zamansky
+Assignment: Lab2B
 
-//#pragma once //ONLY add .h file ONCE - 1st way
+This program accepts two integer parameters (L represents lower limit and U represents upper limit) and then prints out all the integers in the range L <= i < U separated by spaces. It includes the lower limit, but exclude the upper limit
+*/
 
-#ifndef MATHFUNCS_H //if MATHFUNCS_H is NOT defined - 2nd way and it's usually better
-#define MATHFUNCS_H 
+#ifndef FUNCS_H
+#define FUNCS_H 
 
 //FUNCTION SIGNATURES
 void print_interval(int, int);
