@@ -4,17 +4,13 @@ Course: CSCI-135
 Instructor: Michael Zamansky
 Assignment: Lab2B
 
-This program ... TYPE HERE
+This program accepts two integer parameters (L represents lower limit and U represents upper limit) and then prints out all the integers in the range L <= i < U separated by spaces. It includes the lower limit, but exclude the upper limit
 */
-
-//How to do multiple compilations
-//Include 3 .h files for 3 .cpp files inside them
 
 #include <iostream>
 #include "funcs.h"
 
 void print_interval(int, int);
-
 
 int main()
 {
