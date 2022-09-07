@@ -18,6 +18,6 @@ void print_interval(int, int);
 
 int main()
 {
-	print_interval(0, 20);
+	print_interval(-5, 10);
 	return 0;
 }
