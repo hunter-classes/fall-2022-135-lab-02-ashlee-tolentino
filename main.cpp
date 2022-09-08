@@ -10,8 +10,6 @@ This program accepts two integer parameters (L represents lower limit and U repr
 #include <iostream>
 #include "funcs.h"
 
-void print_interval(int, int);
-
 int main()
 {
 	print_interval(-5, 10);
