@@ -9,20 +9,12 @@ This program creates an array of 10 integers and it provides the user with an in
 
 #include <iostream>
 
-void printArray(int myData[10])
-{
-	for(int i = 0; i < 10; i++)
-	{
-		std::cout << myData[i] << " ";
-	}
-}
-
 int main()
 {
 	int myData[10];
-	for(int i = 0; i < 10; i++)
+	for(int k = 0; k < 10; k++)
 	{
-		myData[i] = 1;
+		myData[k] = 1;
 	}
 
 	int i;
@@ -30,14 +22,20 @@ int main()
 	do
 	{
 		std::cout << std::endl;
-		printArray(myData);
+		for(int j = 0; j < 10; j++)
+		{
+			std::cout << myData[j] << " ";
+		}
+
 		std::cout << "\n\nInput index: ";
 		std::cin >> i;
 
 		std::cout << "Input value: ";
 		std::cin >> v;
-
-		myData[i] = v;
+		if(i >= 0 && i < 10)
+		{
+			myData[i] = v;
+		}
 	}
 	while(i >= 0 && i < 10);
 	std::cout << "\nIndex out of range. Exit." << std::endl;
