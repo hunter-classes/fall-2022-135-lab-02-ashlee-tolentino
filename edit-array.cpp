@@ -29,17 +29,18 @@ int main()
 	int v;
 	do
 	{
+		std::cout << std::endl;
 		printArray(myData);
-		std::cout << "\nInput index: " << std::endl;
+		std::cout << "\n\nInput index: ";
 		std::cin >> i;
 
-		std::cout << "Input value: " << std::endl;
+		std::cout << "Input value: ";
 		std::cin >> v;
 
 		myData[i] = v;
 	}
 	while(i >= 0 && i < 10);
-	std::cout << "Index out of range. Exit." << std::endl;
+	std::cout << "\nIndex out of range. Exit." << std::endl;
 	
 	return 0;
 }
