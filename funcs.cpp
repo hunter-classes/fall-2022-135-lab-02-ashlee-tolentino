@@ -16,4 +16,5 @@ void print_interval(int L, int U)
 	{
 		std::cout << i << " ";
 	}
+	std::cout << std::endl;
 }
